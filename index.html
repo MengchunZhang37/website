@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Meng-Chun Zhang — representation learning for speech and physiological signals. Research, teaching, and background.">
+<title>Meng-Chun Zhang</title><link rel="stylesheet" href="styles.css"><script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#background">Background</a><a href="assets/Meng-Chun_Zhang_CV.pdf">CV</a></nav></header>
+<main id="main">
+<section class="intro" id="about" aria-labelledby="name">
+<h1 id="name">Meng-Chun Zhang</h1>
+<div class="intro-main"><img class="portrait" src="assets/portrait.jpg" alt="Portrait of Meng-Chun Zhang" width="3283" height="4703"><div class="intro-body">
+<p>I am completing an M.S. in Biostatistics at the University of Pittsburgh. At Carnegie Mellon University, I work with <a href="https://cmu-mlsp.github.io/team/bhiksha_raj">Bhiksha Raj</a> on speaker verification and serve as a teaching assistant for <a href="https://deeplearning.cs.cmu.edu/">Introduction to Deep Learning</a>.</p>
+<p>My research is in representation learning for speech and physiological signals. I like tracing a result back to the computation that produced it, and using that understanding to guide model design. My background is in pharmacy and bioinformatics; I am also interested in how biological and artificial neural networks can inform one another.</p>
+<p class="contact"><a href="mailto:MEZ141@pitt.edu">Email</a><span aria-hidden="true">/</span><a href="https://github.com/MengchunZhang37">GitHub</a><span aria-hidden="true">/</span><a href="assets/Meng-Chun_Zhang_CV.pdf">CV</a></p>
+
+</div></div>
+</section>
+<section id="research" aria-labelledby="research-title">
+<h2 id="research-title">Research</h2>
+<article class="research-entry">
+<button class="figure-open" type="button" data-figure="assets/speech-timing.png" data-caption="CD-RoPE architecture — Figure 1 from Convolutional Dynamic Rotary Positional Encoding (Hong & Zhang, Interspeech 2026)." aria-label="Enlarge the CD-RoPE architecture figure"><img src="assets/speech-timing.png" alt="CD-RoPE architecture: local acoustic context adjusts rotary positional encoding in the attention branch." width="1400" height="1311"><span class="image-note">Enlarge figure</span></button>
+<div class="entry-copy"><h3>Convolutional Dynamic Rotary Positional Encoding</h3><p class="authors">Euijin Hong, <strong>Meng-Chun Zhang</strong><br><span class="venue">Interspeech 2026</span></p><p>CD-RoPE adapts positional encoding to local acoustic context in speech recognition. I contributed to method development, robustness evaluation, and ablation studies. Our Branchformer model achieved lower word error rates than RelPos on LibriSpeech with <strong>2.2 million fewer parameters</strong>.</p><p class="resource-links"><a href="https://www.isca-archive.org/interspeech_2026/hong26_interspeech.pdf">Paper</a></p></div>
+</article>
+<article class="research-entry">
+<button class="figure-open wide-figure" type="button" data-figure="assets/eeg-model.png" data-caption="MultiDiffNet architecture — Figure 1 from the project manuscript. Full paper: arxiv.org/abs/2511.18294." aria-label="Enlarge the MultiDiffNet architecture figure"><img src="assets/eeg-model.png" alt="MultiDiffNet combines reconstruction, contrastive, and classification objectives in a shared latent representation." width="1400" height="727"><span class="image-note">Enlarge figure</span></button>
+<div class="entry-copy"><h3>MultiDiffNet: Cross-Subject EEG Decoding</h3><p class="authors"><strong>Meng-Chun Zhang*</strong>, Kateryna Shapovalenko*, Yucheng Shao, Eddie Guo, Parusha Pradhan<br><span class="venue">NeurIPS 2025 Workshop BrainBodyFM; AAAI 2026 Workshop Neuro for AI & AI for Neuro</span></p><p>With guidance from Bhiksha Raj, I co-led this work with Kateryna Shapovalenko, designing the model and investigating its latent representations and objectives across four EEG tasks. Unseen-subject accuracy on 26-class SSVEP was <strong>84.72%</strong>, versus 81.08% for EEGNet under the same protocol.</p><p class="resource-links"><a href="https://arxiv.org/abs/2511.18294">Paper</a><a href="https://github.com/eddieguo-1128/DualDiff">Code</a><button class="text-button" type="button" data-figure="assets/neurips-poster.jpg" data-crop="poster-crop" data-caption="Presenting MultiDiffNet at a NeurIPS workshop.">Poster session photo</button><span class="equal-note">*Equal contribution</span></p></div>
+</article>
+<h3 class="subheading">Ongoing work</h3>
+<ul class="ongoing-list">
+<li><strong>Speaker verification.</strong> With Bhiksha Raj, I develop methods using phonetic information and embedding geometry to compare speakers across utterances.</li>
+<li><strong>Self-supervised representation learning.</strong> I independently initiated a study of reconstruction and contrastive learning across EEG, ECG, and wearable-sensor tasks, examining objectives, encoder components, and downstream readouts.</li>
+<li><strong>Resting-state fMRI.</strong> My thesis with <a href="https://www.psychiatry.pitt.edu/about-us/our-people/howard-j-aizenstein-md-phd">Professor Howard Aizenstein</a> adapts SwiFUN for forecasting and investigates representations for clinical classification and individual-trait prediction. <a href="https://github.com/MengchunZhang37/SwinFUN_fMRI">Code</a></li>
+</ul>
+<details class="additional-work"><summary>Other research: molecular ML and neural dynamics</summary>
+<ul class="publication-list">
+<li><a href="https://doi.org/10.1101/2025.09.24.678433">Soft Metropolis-Hastings</a>. Method co-development for molecular diffusion sampling. Accepted to SIMBIOCHEM II, a workshop at NeurIPS 2026. The link leads to the earlier public preprint.</li>
+<li><a href="https://arxiv.org/abs/2507.08162">AmpLyze</a>. Co-designed a peptide hemolytic-concentration prediction model. IEEE BIBM 2025.</li>
+<li><a href="https://arxiv.org/abs/2508.02834">Learning from B Cell Evolution</a>. Model implementation and method development for antibody diffusion. NeurIPS 2025 Workshop AI4D3.</li>
+<li><a href="https://zenodo.org/records/15319857">Recurrent-network training dynamics in a motor-control task</a>. Hyperparameter experiments and representational/dynamical analyses through Neuromatch Impact Scholars, mentored by Alex Murphy. Report and code, 2025.</li>
+</ul>
+</details>
+</section>
+<section id="teaching" aria-labelledby="teaching-title">
+<h2 id="teaching-title">Teaching & mentorship</h2>
+<div class="teaching-intro"><h3>Introduction to Deep Learning, CMU</h3><p>I have served as a TA for three semesters since Fall 2025, and mentored 24 students across six research projects. I have also taught labs, recitations, bootcamps, and a guest lecture segment on generative adversarial networks.</p><p class="recordings"><strong>Selected recitations:</strong> <a href="https://youtu.be/fp7Uodac3uE">datasets</a>, <a href="https://www.youtube.com/watch?v=Ejp_fU7Q0dc">data loaders</a>, <a href="https://youtu.be/HzIgt-rSdg0">loss functions</a>, <a href="https://youtu.be/-TCH0DbUEKM?si=sc9yDp1P7OrvMpcE">Weights &amp; Biases</a>, and <a href="https://www.youtube.com/watch?v=GuUmMK3Qf2c">PSC computing workflows</a>.</p>
+<p><a href="https://youtu.be/m_WOl6xzNWY?t=2760">GAN lecture recording</a> <span class="muted">(my segment starts at 46:00)</span></p></div>
+<div class="teaching-photos">
+<figure><button class="photo-open bootcamp-photo" type="button" data-crop="bootcamp-crop" data-figure="assets/teaching-bootcamp.jpg" data-caption="Teaching a deep-learning bootcamp at CMU, Fall 2025." aria-label="Enlarge the deep-learning bootcamp photograph"><img src="assets/teaching-bootcamp.jpg" alt="A deep-learning bootcamp in a CMU classroom, with course slides projected behind the instructor." width="1702" height="1276" loading="lazy"></button><figcaption>Deep-learning bootcamp, Fall 2025.</figcaption></figure>
+<figure><button class="photo-open autograd-photo" type="button" data-crop="autograd-crop" data-figure="assets/teaching-autograd.jpg" data-caption="Teaching an autograd lab at CMU." aria-label="Enlarge the autograd lab photograph"><img src="assets/teaching-autograd.jpg" alt="Teaching an autograd lab with Python code projected behind the lectern." width="1280" height="1707" loading="lazy"></button><figcaption>Working through autograd in a lab.</figcaption></figure>
+</div>
+<div class="teaching-entry mentoring-entry"><a class="aspen-image" href="https://arxiv.org/abs/2602.16147"><img src="assets/aspen.png" alt="ASPEN combines temporal and spectral EEG representations before classification; Figure 1 from the paper." width="1400" height="535" loading="lazy"></a><div><h3>Student research: ASPEN</h3><p>I mentored the team behind ASPEN, a spectral-temporal model for cross-subject EEG decoding, including its experimental development. The work grew from a course project into a paper at IEEE CBMS 2026.</p><p><a href="https://arxiv.org/abs/2602.16147">Paper</a></p></div></div>
+<p class="mentoring-topics">Other projects I mentored addressed iEEG/ECG decoding, Koopman-based dynamical modeling, financial forecasting, and evaluation of AI agents’ tool selection.</p>
+</section>
+<section id="background" aria-labelledby="background-title">
+<h2 id="background-title">Background</h2>
+<p>I began in pharmacy at Harbin Medical University, where I led an undergraduate green walnut husk project under the guidance of Professors <a href="https://yxy.hrbmu.edu.cn/info/1076/1539.htm">Libo Wang</a> and <a href="https://yxy.hrbmu.edu.cn/info/1078/2313.htm">Jinhui Wang</a>, and contributed to multivariate analysis of chemical-component profiles. The project was selected for Heilongjiang Province’s Undergraduate Innovation and Entrepreneurship Training Program.</p>
+<p>I conducted microbiology and genomics research with <a href="https://yxy.hrbmu.edu.cn/info/1075/1551.htm">Professor Shu-Lin Liu</a> at Harbin Medical University. My bioinformatics work included gene-expression and methylation integration, network analysis, and prognostic modeling. That experience brought me to biostatistics at Pitt, graduate mathematics in its Department of Mathematics, and deep-learning courses through cross-registration at CMU.</p>
+<p>I also served as a Recruitment Ambassador for Pitt’s Department of Biostatistics in Fall 2025–Spring 2026.</p>
+<details class="additional-work"><summary>Selected biomedical publications</summary><ul class="publication-list">
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/40460494/">Multi-level inhibition of SARS-CoV-2 invasion</a>. Co-first author. <em>Virology</em>, 2025.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38296907/">ANKRD52 in pan-cancer</a>. Co-first author. <em>Biochemical Genetics</em>, 2024.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/37443453/">THBS1 and combination treatment in ovarian cancer</a>. <em>Phytotherapy Research</em>, 2023.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/35710397/">KAZN as a diagnostic marker in ovarian cancer</a>. Co-first author. <em>BMC Cancer</em>, 2022.</li>
+</ul></details>
+</section>
+<section id="with-the-team" aria-labelledby="team-title"><h2 id="team-title">With the teaching team</h2>
+<figure class="team-photo"><button class="photo-open outing-photo" type="button" data-figure="assets/ta-outing.jpg" data-caption="An outing with the CMU teaching team." aria-label="Enlarge the teaching-team outing photograph"><img src="assets/ta-outing.jpg" alt="A group outing with the teaching team in an autumn forest." width="5120" height="3840" loading="lazy"></button><figcaption>An outing with the CMU teaching team.</figcaption></figure>
+</section>
+<footer><span>© 2026 Meng-Chun Zhang · Updated November 2026</span><a href="#about">Back to top</a></footer>
+</main>
+<dialog id="figure-dialog" aria-labelledby="figure-caption"><button class="close-dialog" type="button" aria-label="Close figure">Close ×</button><div class="dialog-media"><img id="dialog-image" alt=""></div><p id="figure-caption"></p></dialog>
+</body></html>
